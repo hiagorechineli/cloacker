@@ -7,7 +7,8 @@ export default function middleware(req) {
   const country = req.headers.get('x-vercel-ip-country') || 'US';
 
   if (country === 'BR') {
-    return Response.redirect('https://instagram.com/', 302);
+    return Response.redirect('https://revolver-one.vercel.app/', 302);
   }
   // Se não for BR, ele deixa passar para o index.html
 }
+
